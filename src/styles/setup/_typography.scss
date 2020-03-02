@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font&display=swap');
+@font-face {
+    font-family: ngothic;
+        src: url(.eot);
+        src: url(.eot?#iefix) format('embedded-opentype'),
+             url(.woff) format('woff'),
+             url(.ttf) format('truetype');
+}
+.nanum {
+    font-family: ngothic, sans-serif;
+}
+ 
+// 없는 서체를 외부에서 불러온다.
+// .eot : IE지원 확장자
+// .ttf/otf : 크롬 외 타 브라우저 지원 확장자
+// .woff
+
+// 크로스 브라우징 지원을 위하여 위의 문법으로 작성되어진다.
+// 내서버에 다운받아서 지원하는 방식은 빌드시 속도저하의 원인이 될 수 있다.
+// => *구글폰트 활용*
