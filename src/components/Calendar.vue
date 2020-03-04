@@ -42,6 +42,8 @@
 </template>
 
 <script>
+import moment from 'moment'
+//시계 깜빡깜빡
 export default {
     data() {
         return {
@@ -59,6 +61,30 @@ export default {
             }],
                  
         }
+    },
+    created() {
+        // day객체를 호출할 필요 없다. moment메서드가 현지시각 알랴줌
+        console.log(moment())
+        //소문자는 local 적용
+        console.log(moment().format());
+        console.log(moment().format('LL'));// September 4 2020
+        console.log(moment().format('YYYY'));
+        console.log(moment().format('MM'));// 월
+        console.log(moment().format('MMM'));// 월 영어로
+        // console.log(moment().format('DD'));// 일
+        console.log(moment().date());// 분
+        console.log(moment().format('ddd'));// 요일 영어로
+        console.log(moment().format('LT'));// 초없는 시간
+        console.log(moment().format('H'));// 시
+        //console.log(moment().format('m'));// 분
+        console.log(moment().minute());// 분
+        //console.log(moment().format('s'));// 초
+        console.log(moment().second());// 초
+        console.log(moment().format('a'));// 오전,오후
+
+        console.log(moment().format('DDDD'));// 연중 일수
+        console.log(moment().format('WW'));// 연중 몇주
+        console.log(moment('3/1/2020').format('e'));// 해당 날짜의 주번호(1(월)~7(일))
     }
 }
 </script>

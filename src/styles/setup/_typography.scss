@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Cute+Font&display=swap');
-@font-face {
-    font-family: ngothic;
-        src: url(.eot);
-        src: url(.eot?#iefix) format('embedded-opentype'),
-             url(.woff) format('woff'),
-             url(.ttf) format('truetype');
-}
-.nanum {
-    font-family: ngothic, sans-serif;
-}
+//font-family: 'Nanum Gothic', ;
+//font-family: 'Cute Font', ;
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Nanum+Gothic&display=swap&subset=korean');
  
 // 없는 서체를 외부에서 불러온다.
 // .eot : IE지원 확장자
